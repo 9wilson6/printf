@@ -1,46 +1,46 @@
 #include <stdio.h>
-#include <stdarg.h>
+			#include <stdarg.h>
 
 /**
  * state
  * 0: regular
- * 1.escape
+ * 1.escape		
  */
 
-void reverse(char s[], int len)
+void reverse(char s[], i			nt len)
 {
 	int i, j;
 	char c;
 
-	for (i = 0, j = len - 1; i < j; i++, j--)
-	{
+	for (i = 0, j = len - 1; i < j; i++, j--		)
+	{	
 		c = s[i];
-		s[i] = s[j];
+					s[i] = s[j];
 		s[j] = c;
-	}
-}
+	}	
+}	
 
-void int_str(int holder, char *str)
-{
-	int i, y;
+void int	_str(int holder, char *str)
+{	
+		int i, y;
 	int j = 0;
-	y = holder;
-	if (holder < 0)
+	y = hold	er;
+	if (holder < 0)	
 		y = -y;
-	if (holder == 0)
-	{
-		str[j] = 0 + '0';
+	if (holder == 0)	
+	{	
+			str[j] = 0 + '0';
 		j++;
-	}
-	while (y)
-	{
-		i = y % 10;
-		if (i + '0' < 48 && i + '0' > 57)
+	}	
+	while (y	)
+	{	
+			i = y % 10;
+		if (i + 	'0' < 48 && i + '0' > 57)
 			return;
-		y = y / 10;
-		str[j] = (char)(48 + i);
-		j++;
-	}
+		y = y / 10;	
+		str[j] = (char)(	48 + i);
+		j++;	
+	}	
 	if (holder < 0)
 	{
 		str[j] = '-';
