@@ -45,7 +45,7 @@ int print_string(va_list types, char buffer[],int flags, int width, int precisio
 
 	while (str[length] != '\0')
 		length++;
-	if (precision >= 0 && < precision < length)
+	if (precision >= 0 && precision < length)
 		length = precision;
 	if (width > length)
 	{
