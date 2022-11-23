@@ -1,0 +1,57 @@
+void int_str(int holder, char *str)
+{
+	int i, y;
+	int j = 0;
+	y = holder;
+	if (holder < 0)
+		y = -y;
+	if (holder == 0)
+	{
+		str[j] = 0 + '0';
+		j++;
+	}
+	while (y)
+	{
+		i = y % 10;
+		if (i + '0' < 48 && i + '0' > 57)
+			return;
+		y = y / 10;
+		str[j] = (char)(48 + i);
+		j++;
+	}
+	if (holder < 0)
+	{
+		str[j] = '-';
+		j++;
+	}
+	str[j] = '\0';
+	reverse(str, j);
+}
+
+void hex(int u, char *s)
+{
+    
+	if (u < 0)
+        return;
+    	//s[0] = '0';
+	//s[1] = 'x';
+	int j = 0;
+	char hex[16] = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
+	while (u)
+    
+	{
+        
+		int y = u % 16;
+
+		s[j] = hex[y];
+		u = u / 16;
+		j++;
+    
+	}
+	s[j] = 'x';
+	j++;
+	s[j] = '0';
+	j++;
+	s[j] = '\0';
+	reverse(s,j);
+}
