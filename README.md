@@ -5,4 +5,4 @@ The project is a collaboration of demonstration of simple printing which indicat
 ## Authors
 
 - [Wilson Gatheru](https://github.com/9wilson6)
-- [ANTHONY NYAGA](https://github.com/anthonynyaga@gmail.com)
+- [ANTHONY NYAGA](https://github.com/anth0rny)
